@@ -12,7 +12,9 @@ class manusia:
 
     def get_nama(self):
         namaku = self.__nama.isdigit()
-        if namaku == False : 
+        if self.__nama == '':
+            print('nama tidak boleh kosong')
+        elif namaku == False : 
             print('Selamat datang', self.__nama)
         else : 
             print('Masukkan nama dengan benar')
